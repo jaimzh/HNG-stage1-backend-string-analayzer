@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pycache
+*.pkl
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependency files
+*.log
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Environment variables
+.env
+
+# Cache
+.cache/
