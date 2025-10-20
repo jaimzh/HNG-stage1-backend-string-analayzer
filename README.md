@@ -26,7 +26,7 @@ A simple **FastAPI** backend that analyzes strings — checking their properties
    ```bash
    git clone https://github.com/<your-username>/<your-repo-name>.git
    cd <your-repo-name>
-````
+
 
 2. **Create a virtual environment**
 
