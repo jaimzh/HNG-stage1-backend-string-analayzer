@@ -91,7 +91,7 @@ def analyze_string(data: StringInput):
     return analyzed_data
 
 
-# GET ENPOINTS 
+# GET 
 @app.get("/strings")
 def get_all_strings(
     is_palindrome: Optional[bool] = None, 
