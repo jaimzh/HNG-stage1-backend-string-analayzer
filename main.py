@@ -54,7 +54,7 @@ def root():
     return {"message": "String Analyzer API is running"}
 
 # POST  
-@app.post("/strings")
+@app.post("/strings", status_code=201)
 def analyze_string(data: StringInput):
     value = data.value
     
@@ -209,11 +209,12 @@ def filter_by_natural_language(query: str):
         }
    }
 
-@app.get("/strings/{string_id}")
-def get_string(string_id: str): 
-    if string_id not in db: 
-        raise HTTPException(status_code = 404, detail="String not found" )
-    return db[string_id]
+@app.get("/strings/{string_value}")
+def get_string(string_value: str): 
+    sha_hash = get_sha256_hash(string_value)
+    if sha_hash not in db:
+        raise HTTPException(status_code=404, detail="String not found")
+    return db[sha_hash]
      
 # DELETE
 @app.delete("/strings/{string_value}", status_code= 204)
