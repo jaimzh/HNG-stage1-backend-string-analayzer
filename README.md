@@ -3,6 +3,16 @@
 
 A simple **FastAPI** backend that analyzes strings — computing useful properties such as length, palindrome status, unique characters, word count, SHA-256 hash, and character frequency.
 
+
+## 🚀 Live Deployment
+
+The API is live and running on **Railway**:  
+👉 [https://hng-stage1-backend-string-analayzer-production-48a2.up.railway.app/](https://hng-stage1-backend-string-analayzer-production-48a2.up.railway.app/)
+
+### Example Usage
+```bash
+GET https://hng-stage1-backend-string-analayzer-production-48a2.up.railway.app/strings/hello
+
 ---
 
 ## 📦 Features
